@@ -40,8 +40,8 @@ const skillsData = {
     { name: "TypeScript", icon: <SiTypescript />, color: "#3178C6" },
     { name: "HTML5", icon: <FaHtml5 />, color: "#E34F26" },
     { name: "CSS3", icon: <FaCss3Alt />, color: "#1572B6" },
-    { name: "Python", icon: <FaPython />, color: "#3776AB" },
-    { name: "PHP", icon: <FaPhp />, color: "#777BB4" }
+    { name: "PHP", icon: <FaPhp />, color: "#777BB4" },
+    { name: "Python", icon: <FaPython />, color: "#3776AB" }
   ],
   frameworks: [
     { name: "React.js", icon: <FaReact />, color: "#61DAFB" },
@@ -55,11 +55,10 @@ const skillsData = {
     { name: "Git", icon: <FaGitAlt />, color: "#F05032" },
     { name: "GitHub", icon: <FaGithub />, color: "#181717" },
     { name: "Figma", icon: <FaFigma />, color: "#F24E1E" },
-    { name: "VS Code", icon: <VscCode />, color: "#007ACC" }, // Fixed
-    { name: "Postman", icon: <SiPostman />, color: "#FF6C37" },
-    { name: "Webpack", icon: <SiWebpack />, color: "#8DD6F9" },
+    { name: "VS Code", icon: <VscCode />, color: "#007ACC" }, 
     { name: "Vercel", icon: <SiVercel />, color: "#000000" },
-    { name: "NPM", icon: <FaNpm />, color: "#CB3837" }
+    { name: "NPM", icon: <FaNpm />, color: "#CB3837" },
+    { name: "Unity", icon: <FaUnity/>, color: : "#181717"}
   ],
   database: [
     { name: "MongoDB", icon: <SiMongodb />, color: "#47A248" },
