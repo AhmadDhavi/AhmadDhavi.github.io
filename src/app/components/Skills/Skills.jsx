@@ -45,8 +45,7 @@ const skillsData = {
     { name: "Next.js", icon: <SiNextdotjs />, color: "#000000" },
     { name: "Vue.js", icon: <SiVuedotjs />, color: "#4FC08D" },
     { name: "Tailwind CSS", icon: <SiTailwindcss />, color: "#06B6D4" },
-    { name: "Bootstrap", icon: <FaBootstrap />, color: "#7952B3" },
-    { name: "Express.js", icon: <SiExpress />, color: "#000000" }
+    { name: "Bootstrap", icon: <FaBootstrap />, color: "#7952B3" }
   ],
   tools: [
     { name: "Git", icon: <FaGitAlt />, color: "#F05032" },
