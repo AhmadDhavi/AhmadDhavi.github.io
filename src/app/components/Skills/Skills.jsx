@@ -15,23 +15,20 @@ import {
   FaPhp,
   FaNpm,
   FaBootstrap,
-  FaUnity // Added missing import
+  FaUnity 
 } from 'react-icons/fa'
 import { 
   SiNextdotjs, 
   SiTypescript, 
   SiTailwindcss, 
   SiMongodb,
-  SiPostman,
-  SiWebpack,
   SiVercel,
   SiMysql,
   SiPostgresql,
   SiFirebase,
-  SiRedis,
   SiSupabase,
   SiVuedotjs,
-  SiExpress
+  SiPrisma
 } from 'react-icons/si'
 import { VscCode } from 'react-icons/vsc'
 
@@ -62,12 +59,11 @@ const skillsData = {
     { name: "Unity", icon: <FaUnity/>, color: "#181717"} 
   ],
   database: [
-    { name: "MongoDB", icon: <SiMongodb />, color: "#47A248" },
     { name: "MySQL", icon: <SiMysql />, color: "#4479A1" },
     { name: "PostgreSQL", icon: <SiPostgresql />, color: "#4169E1" },
     { name: "Firebase", icon: <SiFirebase />, color: "#FFCA28" },
-    { name: "Redis", icon: <SiRedis />, color: "#DC382D" },
-    { name: "Supabase", icon: <SiSupabase />, color: "#3ECF8E" }
+    { name: "Supabase", icon: <SiSupabase />, color: "#3ECF8E" },
+    { name: "Prism", icon: <SiPrisma />, color: "#2D3748" }
   ]
 }
 
