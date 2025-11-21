@@ -14,7 +14,8 @@ import {
   FaPython,
   FaPhp,
   FaNpm,
-  FaBootstrap
+  FaBootstrap,
+  FaUnity // Added missing import
 } from 'react-icons/fa'
 import { 
   SiNextdotjs, 
@@ -32,7 +33,7 @@ import {
   SiVuedotjs,
   SiExpress
 } from 'react-icons/si'
-import { VscCode } from 'react-icons/vsc' // VS Code dari package VSC
+import { VscCode } from 'react-icons/vsc'
 
 const skillsData = {
   languages: [
@@ -58,7 +59,7 @@ const skillsData = {
     { name: "VS Code", icon: <VscCode />, color: "#007ACC" }, 
     { name: "Vercel", icon: <SiVercel />, color: "#000000" },
     { name: "NPM", icon: <FaNpm />, color: "#CB3837" },
-    { name: "Unity", icon: <FaUnity/>, color: : "#181717"}
+    { name: "Unity", icon: <FaUnity/>, color: "#181717"} 
   ],
   database: [
     { name: "MongoDB", icon: <SiMongodb />, color: "#47A248" },
@@ -70,45 +71,44 @@ const skillsData = {
   ]
 }
 
-      export default function Skills() {
-        const [activeTab, setActiveTab] = useState('languages')
+export default function Skills() {
+  const [activeTab, setActiveTab] = useState('languages')
 
-        return (
-          <section className={styles.skillsSection} id="skills">
-            <div className="container">
-              <div className={styles.sectionHeader}>
-                <h2 className="gradient-text">Skills & Expertise</h2>
-                <p>Technologies and tools I work with</p>
-              </div>
-              
-              <div className={styles.tabButtons}>
-        <button 
-          className={`${styles.tabButton} ${activeTab === 'languages' ? styles.active : ''}`}
-          onClick={() => setActiveTab('languages')}
-        >
-          Languages
-        </button>
-        <button 
-          className={`${styles.tabButton} ${activeTab === 'frameworks' ? styles.active : ''}`}
-          onClick={() => setActiveTab('frameworks')}
-        >
-          Frameworks
-        </button>
-        <button 
-          className={`${styles.tabButton} ${activeTab === 'tools' ? styles.active : ''}`}
-          onClick={() => setActiveTab('tools')}
-        >
-          Tools
-        </button>
-        <button 
-          className={`${styles.tabButton} ${activeTab === 'database' ? styles.active : ''}`}
-          onClick={() => setActiveTab('database')}
-        >
-          Database
-        </button>
-      </div>
-
+  return (
+    <section className={styles.skillsSection} id="skills">
+      <div className="container">
+        <div className={styles.sectionHeader}>
+          <h2 className="gradient-text">Skills & Expertise</h2>
+          <p>Technologies and tools I work with</p>
+        </div>
         
+        <div className={styles.tabButtons}>
+          <button 
+            className={`${styles.tabButton} ${activeTab === 'languages' ? styles.active : ''}`}
+            onClick={() => setActiveTab('languages')}
+          >
+            Languages
+          </button>
+          <button 
+            className={`${styles.tabButton} ${activeTab === 'frameworks' ? styles.active : ''}`}
+            onClick={() => setActiveTab('frameworks')}
+          >
+            Frameworks
+          </button>
+          <button 
+            className={`${styles.tabButton} ${activeTab === 'tools' ? styles.active : ''}`}
+            onClick={() => setActiveTab('tools')}
+          >
+            Tools
+          </button>
+          <button 
+            className={`${styles.tabButton} ${activeTab === 'database' ? styles.active : ''}`}
+            onClick={() => setActiveTab('database')}
+          >
+            Database
+          </button>
+        </div>
+
         <div className={styles.skillsGrid}>
           {skillsData[activeTab].map((skill, index) => (
             <div 
